@@ -89,19 +89,14 @@ class TableExtractor:
         """Build extraction prompt"""
         fields_desc = ", ".join(fields)
 
-        prompt = f"""Extract data from the table in this document.
+        prompt = f"""For each row in the table, extract:
+- line_id: the row number (1, 2, 3, ...)
+- average_price: the average price as a number
 
-For each row in the table, extract the following fields:
-{fields_desc}
-
-Return the data as a JSON object with this exact structure:
+Return JSON:
 {{
   "extractions": [
-    {{
-      "line_no": 0
-      "costume_description": "...",
-      "average_price": 123.45
-    }},
+    {{"line_id": 1, "average_price": 41.45}},
     ...
   ]
 }}
