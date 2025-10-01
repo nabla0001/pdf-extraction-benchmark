@@ -1,0 +1,5 @@
+fastapi
+litellm
+openai
+pydantic
+pydantic-settings

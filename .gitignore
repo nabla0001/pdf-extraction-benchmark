@@ -1,0 +1,11 @@
+notebooks
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# other file types
+*.xml
+*.idea
+*.iml
