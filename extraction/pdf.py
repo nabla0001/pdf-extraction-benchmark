@@ -98,6 +98,7 @@ Return the data as a JSON object with this exact structure:
 {{
   "extractions": [
     {{
+      "line_no": 0
       "costume_description": "...",
       "average_price": 123.45
     }},
@@ -107,8 +108,9 @@ Return the data as a JSON object with this exact structure:
 
 Rules:
 - Extract ALL rows from the table
+- line_no should be an int
 - costume_description should be a string
-- highest_price should be a number (no currency symbols)
+- average_price should be a float (no currency symbols)
 - Return ONLY valid JSON, no other text
 - If handwriting is unclear, make your best interpretation
 """
