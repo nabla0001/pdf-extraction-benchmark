@@ -3,3 +3,4 @@ litellm
 openai
 pydantic
 pydantic-settings
+tabulate

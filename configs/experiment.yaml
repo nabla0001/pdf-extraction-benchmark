@@ -1,0 +1,6 @@
+ground_truth_json: "data/ground_truth.json"
+pdf_files:
+  - "data/00001.pdf"
+models:
+  - "gpt-4.1-mini"
+temperature: 1.0
