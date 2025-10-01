@@ -12,5 +12,6 @@ A service for testing LLM-based PDF extraction pipelines against other.
 ## Future work
 
 1. Turn into API service via `fastapi`
-2. Stronger error handling
-3. 
+2. Stronger error handling & retry mechanism
+3. Guardrails
+   * cost control
